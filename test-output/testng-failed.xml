@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="classes">
+  <test name="Test">
+    <classes>
+      <class name="automatingUptoPayement.Final2"/>
+      <class name="automatingUptoPayement.Finalresult"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)" parallel="classes">
+    <classes>
+      <class name="automatingUptoPayement.Final2">
+        <methods>
+          <include name="endTime2"/>
+          <include name="testcase2"/>
+          <include name="startTime2"/>
+        </methods>
+      </class> <!-- automatingUptoPayement.Final2 -->
+      <class name="automatingUptoPayement.Finalresult">
+        <methods>
+          <include name="endTime"/>
+          <include name="testcase1"/>
+          <include name="addWatch"/>
+          <include name="startTime"/>
+        </methods>
+      </class> <!-- automatingUptoPayement.Finalresult -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
